@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+  }
+  .login-container {
+    width: 300px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  .icon-bg {
+  background-color: green;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  display: flex; /* Use flexbox to center children */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+.icon {
+  font-size: 50px; /* Adjust this value to make the icon bigger */
+}
+
+  input[type="text"], input[type="password"] {
+    width: calc(100% - 20px);
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  input[type="submit"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+  }
+  .cancel-btn {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 3px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none; /* Removes underline from links */
+  }
+  .remember-me {
+    margin-bottom: 10px; /* Space between checkbox and login button */
+  }
+  
+</style>
+</head>
+<body>
+
+  <div class="login-container">
+  
+    <div class="icon-bg">
+        <div class="icon">&#128100;</div> <!-- Profile icon using HTML entity -->
+    </div>
+  <form action="/login" method="post">
+      <label for="username">Username</label>
+      <input type="text" id="username" name="username" placeholder="Enter Username">
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password">
+      
+      <input type="submit" value="Login">
+      
+      <label class="remember-me">
+          <input type="checkbox" name="remember"> Remember me
+      </label>
+      
+      <a href="#" class="cancel-btn" >Cancel</a>
+      
+      <a href="#" style="float:right;">Forgot password?</a>
+      
+   </form>
+   
+</div>
+
+</body>
+</html>
