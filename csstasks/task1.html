@@ -1,46 +1,113 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<style>
-#data{
-  border: 1px solid black;
-  width: 100%;
-  background-color: rgb(100, 219, 237);
-  border-radius: 19px;
-}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shapes{
+            display: grid;
+            margin-left: 500px;
+            grid-template-columns: 1fr 1fr 1fr;
+            height: 200px;
+            width: 300px;
+            margin-top:50px;
+            column-gap: 10px;
+            row-gap: 10px;
 
-.details {
-  background-color: rgb(100, 219, 237);
-  color: black;
-  border: 1px solid black;
-  padding: 8px;
-  border-radius: 25px;
-}
+        }
+        .shapes div{
+            width: 100px;
+            border-style: solid;
+            border-width: 2px;
+            border-color: rgb(116, 168, 12);
 
-</style>
+        }
+        table{
+            width: 100%;
+            background: skyblue;
+            border-radius: 10px;
+            margin-top: 120px;
+            border:2px black solid;
+        }
+        th,td{
+            border-style: solid;
+            border-radius:20px ;
+        }
+        .div1{
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .div2{
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        .div3{
+            border-radius:15px;
+        }
+        .div4{
+            border-radius: 10px;
+        }
+        .div5{
+            border-radius: 5px;
+        }
+        .div6{
+            border-radius: 15px;
+        }
+        .div7{
+            border-radius: 47%;
+        }
+        .div8{
+            border-radius: 4px;
+        }
+        .div9{
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+        }
+    </style>
 </head>
 <body>
-    <table id="data">
-    <tr>
-        <th class="details">Firstname</th>
-        <th class="details">Lastname</th>
-        <th class="details">Age</th>
-    </tr>
-    <tr>
-        <td class="details">Jill</td>
-        <td class="details">Smith</td>
-        <td class="details">50</td>
-    </tr>
-    <tr>
-        <td class="details">Eve</td>
-        <td class="details">Jackson</td>
-        <td class="details">94</td>
-    </tr>
-    <tr>
-        <td class="details">John</td>
-        <td class="details">Doe</td>
-        <td class="details">80</td>
-    </tr>
-    </table> 
+    <div class="table">
+        <table>
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>Jill</td>
+                <td>Smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>Jackson</td>
+                <td>94</td>
+            </tr> <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr> <tr>
+                <td>Jayavanth</td>
+                <td>Athota</td>
+                <td>19</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <div class="shapes">
+        <div class="div1"></div>
+        <div class="div2"></div>
+        <div class="div3"></div>
+        <div class="div4"></div>
+        <div class="div5"></div>
+        <div class="div6"></div>
+        <div class="div7"></div>
+        <div class="div8"></div>
+        <div class="div9"></div>
+        
+    </div>
 </body>
 </html>
